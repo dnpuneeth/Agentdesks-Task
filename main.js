@@ -58,7 +58,6 @@ $(document).ready(function () {
             $('#nav a').removeClass('active');
             $(this).addClass('active');
             var currPage = $(this).attr('rel');
-            debugger
             var startItem = currPage * rowsShown;
             var endItem = startItem + rowsShown;
             $('.table tr').hide().slice(startItem, endItem).css('display','table-row');
